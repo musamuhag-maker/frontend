@@ -1,0 +1,1304 @@
+[
+  {
+    "propertyId": "LDPID10000001",
+    "agentId": 1,
+    "title": "Seaside Serenity Villa",
+    "description": "A luxurious beachfront villa with stunning ocean views and a private infinity pool.",
+    "price": 508900,
+    "status": "For Sale",
+    "type": "Villa",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": "1901 sqft",
+    "location": "639 Old Elm St, Conshohocken, PA 19428",
+    "specialFeatures": [
+      "Private Infinity Pool",
+      "Direct Beach Access",
+      "Panoramic Ocean Views",
+      "Outdoor Entertainment Deck",
+      "Smart Home Automation",
+      "Gourmet Chef's Kitchen",
+      "Master Suite with Ocean Balcony",
+      "Private Garden & Fire Pit",
+      "Home Theater Room",
+      "3-Car Garage"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000001-cover.png"
+      },
+      {
+        "img": "/LDPID10000001-image-1.png"
+      },
+      {
+        "img": "/LDPID100000001-image-2.png"
+      },
+      {
+        "img": "/LDPID100000001-image-3.png"
+      },
+      {
+        "img": "/LDPID100000001-image-4.png"
+      },
+      {
+        "img": "/LDPID100000001-image-5.png"
+      },
+      {
+        "img": "/LDPID100000001-image-6.png"
+      },
+      {
+        "img": "/LDPID100000001-image-7.png"
+      },
+      {
+        "img": "/LDPID100000001-image-8.png"
+      },
+      {
+        "img": "/LDPID100000001-image-9.png"
+      },
+      {
+        "img": "/LDPID100000001-image-10.png"
+      },
+      {
+        "img": "/LDPID100000001-image-11.png"
+      },
+      {
+        "img": "/LDPID100000001-image-12.png"
+      },
+      {
+        "img": "/LDPID100000001-image-13.png"
+      },
+      {
+        "img": "/LDPID100000001-image-14.png"
+      },
+      {
+        "img": "/LDPID100000001-image-15.png"
+      },
+      {
+        "img": "/LDPID100000001-image-16.png"
+      },
+      {
+        "img": "/LDPID100000001-image-17.png"
+      },
+      {
+        "img": "/LDPID100000001-image-18.png"
+      },
+      {
+        "img": "/LDPID100000001-image-19.png"
+      },
+      {
+        "img": "/LDPID100000001-image-20.png"
+      },
+      {
+        "img": "/LDPID100000001-image-21.png"
+      },
+      {
+        "img": "/LDPID100000001-image-22.png"
+      },
+      {
+        "img": "/LDPID100000001-image-23.png"
+      },
+      {
+        "img": "/LDPID100000001-image-24.png"
+      },
+      {
+        "img": "/LDPID100000001-image-25.png"
+      },
+      {
+        "img": "/LDPID100000001-image-26.png"
+      },
+      {
+        "img": "/LDPID100000001-image-27.png"
+      },
+      {
+        "img": "/LDPID100000001-image-28.png"
+      },
+      {
+        "img": "/LDPID100000001-image-29.png"
+      },
+      {
+        "img": "/LDPID100000001-image-30.png"
+      },
+      {
+        "img": "/LDPID100000001-image-31.png"
+      },
+      {
+        "img": "/LDPID100000001-image-32.png"
+      },
+      {
+        "img": "/LDPID100000001-image-33.png"
+      },
+      {
+        "img": "/LDPID100000001-image-34.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000002",
+    "agentId": 1,
+    "title": "Plymouth Park",
+    "description": "A stylish apartment in the city center with panoramic skyline views.",
+    "price": 525000,
+    "status": "For Rent",
+    "type": "Apartment",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": "1,200 sqft",
+    "location": "1700 Butler Pike, Conshohocken, PA 19428",
+    "specialFeatures": [
+      "Detached garage",
+      "Half bath",
+      "Large deck",
+      "Dining room",
+      "Washer and dryer",
+      "Lots of storage space",
+      "Enclosed porch"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000002-cover.png"
+      },
+      {
+        "img": "/LDPID10000002-image-1.png"
+      },
+      {
+        "img": "/LDPID10000002-image-2.png"
+      },
+      {
+        "img": "/LDPID10000002-image-3.png"
+      },
+      {
+        "img": "/LDPID10000002-image-4.png"
+      },
+      {
+        "img": "/LDPID10000002-image-5.png"
+      },
+      {
+        "img": "/LDPID10000002-image-6.png"
+      },
+      {
+        "img": "/LDPID10000002-image-7.png"
+      },
+      {
+        "img": "/LDPID10000002-image-8.png"
+      },
+      {
+        "img": "/LDPID10000002-image-9.png"
+      },
+      {
+        "img": "/LDPID10000002-image-10.png"
+      },
+      {
+        "img": "/LDPID10000002-image-11.png"
+      },
+      {
+        "img": "/LDPID10000002-image-12.png"
+      },
+      {
+        "img": "/LDPID10000002-image-13.png"
+      },
+      {
+        "img": "/LDPID10000002-image-14.png"
+      },
+      {
+        "img": "/LDPID10000002-image-15.png"
+      },
+      {
+        "img": "/LDPID10000002-image-16.png"
+      },
+      {
+        "img": "/LDPID10000002-image-17.png"
+      },
+      {
+        "img": "/LDPID10000002-image-18.png"
+      },
+      {
+        "img": "/LDPID10000002-image-19.png"
+      },
+      {
+        "img": "/LDPID10000002-image-20.png"
+      },
+      {
+        "img": "/LDPID10000002-image-21.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000003",
+    "agentId": 2,
+    "title": "Rustic Retreat Cottage",
+    "description": "A peaceful countryside cottage surrounded by lush greenery.",
+    "price": 315000,
+    "status": "For Sale",
+    "type": "Cottage",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area": "2100 sqft",
+    "location": "Aspen, Colorado",
+    "specialFeatures": [
+      "Wood-Burning Fireplace",
+      "Private Hot Tub",
+      "Spacious Wraparound Porch",
+      "Mountain Views",
+      "Organic Vegetable Garden",
+      "High Ceilings with Beams",
+      "Sauna Room",
+      "Hiking Trail Access",
+      "Detached Studio/Office",
+      "Sustainable Solar Panels"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000003-cover.png"
+      },
+      {
+        "img": "/LDPID10000003-image-1.png"
+      },
+      {
+        "img": "/LDPID10000003-image-2.png"
+      },
+      {
+        "img": "/LDPID10000003-image-3.png"
+      },
+      {
+        "img": "/LDPID10000003-image-4.png"
+      },
+      {
+        "img": "/LDPID10000003-image-5.png"
+      },
+      {
+        "img": "/LDPID10000003-image-6.png"
+      },
+      {
+        "img": "/LDPID10000003-image-7.png"
+      },
+      {
+        "img": "/LDPID10000003-image-8.png"
+      },
+      {
+        "img": "/LDPID10000003-image-9.png"
+      },
+      {
+        "img": "/LDPID10000003-image-10.png"
+      },
+      {
+        "img": "/LDPID10000003-image-11.png"
+      },
+      {
+        "img": "/LDPID10000003-image-12.png"
+      },
+      {
+        "img": "/LDPID10000003-image-13.png"
+      },
+      {
+        "img": "/LDPID10000003-image-14.png"
+      },
+      {
+        "img": "/LDPID10000003-image-15.png"
+      },
+      {
+        "img": "/LDPID10000003-image-16.png"
+      },
+      {
+        "img": "/LDPID10000003-image-17.png"
+      },
+      {
+        "img": "/LDPID10000003-image-18.png"
+      },
+      {
+        "img": "/LDPID10000003-image-19.png"
+      },
+      {
+        "img": "/LDPID10000003-image-20.png"
+      },
+      {
+        "img": "/LDPID10000003-image-21.png"
+      },
+      {
+        "img": "/LDPID10000003-image-22.png"
+      },
+      {
+        "img": "/LDPID10000003-image-23.png"
+      },
+      {
+        "img": "/LDPID10000003-image-24.png"
+      },
+      {
+        "img": "/LDPID10000003-image-25.png"
+      },
+      {
+        "img": "/LDPID10000003-image-26.png"
+      },
+      {
+        "img": "/LDPID10000003-image-27.png"
+      },
+      {
+        "img": "/LDPID10000003-image-28.png"
+      },
+      {
+        "img": "/LDPID10000003-image-29.png"
+      },
+      {
+        "img": "/LDPID10000003-image-30.png"
+      },
+      {
+        "img": "/LDPID10000003-image-31.png"
+      },
+      {
+        "img": "/LDPID10000003-image-32.png"
+      },
+      {
+        "img": "/LDPID10000003-image-33.png"
+      },
+      {
+        "img": "/LDPID10000003-image-34.png"
+      },
+      {
+        "img": "/LDPID10000003-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000004",
+    "agentId": 2,
+    "title": "Skyline Penthouse",
+    "description": "An elegant penthouse featuring floor-to-ceiling windows and premium finishes.",
+    "price": 1250000,
+    "status": "For Sale",
+    "type": "Penthouse",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "area": "4800 sqft",
+    "location": "Dubai, UAE",
+    "specialFeatures": [
+      "Private Rooftop Terrace",
+      "Helipad Access",
+      "Infinity Edge Pool",
+      "Home Cinema & Bar",
+      "Temperature Controlled Wine Cellar",
+      "Private Elevator",
+      "Luxury Spa Bathroom",
+      "Smart Lighting & Climate Control",
+      "Floor-to-Ceiling Glass Walls",
+      "24/7 Butler Service"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000004-cover.png"
+      },
+      {
+        "img": "/LDPID10000004-image-1.png"
+      },
+      {
+        "img": "/LDPID10000004-image-2.png"
+      },
+      {
+        "img": "/LDPID10000004-image-3.png"
+      },
+      {
+        "img": "/LDPID10000004-image-4.png"
+      },
+      {
+        "img": "/LDPID10000004-image-5.png"
+      },
+      {
+        "img": "/LDPID10000004-image-6.png"
+      },
+      {
+        "img": "/LDPID10000004-image-7.png"
+      },
+      {
+        "img": "/LDPID10000004-image-8.png"
+      },
+      {
+        "img": "/LDPID10000004-image-9.png"
+      },
+      {
+        "img": "/LDPID10000004-image-10.png"
+      },
+      {
+        "img": "/LDPID10000004-image-11.png"
+      },
+      {
+        "img": "/LDPID10000004-image-12.png"
+      },
+      {
+        "img": "/LDPID10000004-image-13.png"
+      },
+      {
+        "img": "/LDPID10000004-image-14.png"
+      },
+      {
+        "img": "/LDPID10000004-image-15.png"
+      },
+      {
+        "img": "/LDPID10000004-image-16.png"
+      },
+      {
+        "img": "/LDPID10000004-image-17.png"
+      },
+      {
+        "img": "/LDPID10000004-image-18.png"
+      },
+      {
+        "img": "/LDPID10000004-image-19.png"
+      },
+      {
+        "img": "/LDPID10000004-image-20.png"
+      },
+      {
+        "img": "/LDPID10000004-image-21.png"
+      },
+      {
+        "img": "/LDPID10000004-image-22.png"
+      },
+      {
+        "img": "/LDPID10000004-image-23.png"
+      },
+      {
+        "img": "/LDPID10000004-image-24.png"
+      },
+      {
+        "img": "/LDPID10000004-image-25.png"
+      },
+      {
+        "img": "/LDPID10000004-image-26.png"
+      },
+      {
+        "img": "/LDPID10000004-image-27.png"
+      },
+      {
+        "img": "/LDPID10000004-image-28.png"
+      },
+      {
+        "img": "/LDPID10000004-image-29.png"
+      },
+      {
+        "img": "/LDPID10000004-image-30.png"
+      },
+      {
+        "img": "/LDPID10000004-image-31.png"
+      },
+      {
+        "img": "/LDPID10000004-image-32.png"
+      },
+      {
+        "img": "/LDPID10000004-image-33.png"
+      },
+      {
+        "img": "/LDPID10000004-image-34.png"
+      },
+      {
+        "img": "/LDPID10000004-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000005",
+    "agentId": 3,
+    "title": "Greenwood Family Home",
+    "description": "A spacious family home located in a quiet neighborhood near parks and schools.",
+    "price": 465000,
+    "status": "For Sale",
+    "type": "House",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": "2900 sqft",
+    "location": "Austin, Texas",
+    "specialFeatures": [
+      "Large Backyard with Playground",
+      "Open Concept Living Area",
+      "Energy Efficient Design",
+      "Home Office / Study Room",
+      "Community Pool Access",
+      "Two-Car Garage",
+      "Updated Gourmet Kitchen",
+      "Walk-in Pantry",
+      "Near Top-Rated Schools",
+      "Quiet Cul-de-Sac Location"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000005-cover.png"
+      },
+      {
+        "img": "/LDPID10000005-image-1.png"
+      },
+      {
+        "img": "/LDPID10000005-image-2.png"
+      },
+      {
+        "img": "/LDPID10000005-image-3.png"
+      },
+      {
+        "img": "/LDPID10000005-image-4.png"
+      },
+      {
+        "img": "/LDPID10000005-image-5.png"
+      },
+      {
+        "img": "/LDPID10000005-image-6.png"
+      },
+      {
+        "img": "/LDPID10000005-image-7.png"
+      },
+      {
+        "img": "/LDPID10000005-image-8.png"
+      },
+      {
+        "img": "/LDPID10000005-image-9.png"
+      },
+      {
+        "img": "/LDPID10000005-image-10.png"
+      },
+      {
+        "img": "/LDPID10000005-image-11.png"
+      },
+      {
+        "img": "/LDPID10000005-image-12.png"
+      },
+      {
+        "img": "/LDPID10000005-image-13.png"
+      },
+      {
+        "img": "/LDPID10000005-image-14.png"
+      },
+      {
+        "img": "/LDPID10000005-image-15.png"
+      },
+      {
+        "img": "/LDPID10000005-image-16.png"
+      },
+      {
+        "img": "/LDPID10000005-image-17.png"
+      },
+      {
+        "img": "/LDPID10000005-image-18.png"
+      },
+      {
+        "img": "/LDPID10000005-image-19.png"
+      },
+      {
+        "img": "/LDPID10000005-image-20.png"
+      },
+      {
+        "img": "/LDPID10000005-image-21.png"
+      },
+      {
+        "img": "/LDPID10000005-image-22.png"
+      },
+      {
+        "img": "/LDPID10000005-image-23.png"
+      },
+      {
+        "img": "/LDPID10000005-image-24.png"
+      },
+      {
+        "img": "/LDPID10000005-image-25.png"
+      },
+      {
+        "img": "/LDPID10000005-image-26.png"
+      },
+      {
+        "img": "/LDPID10000005-image-27.png"
+      },
+      {
+        "img": "/LDPID10000005-image-28.png"
+      },
+      {
+        "img": "/LDPID10000005-image-29.png"
+      },
+      {
+        "img": "/LDPID10000005-image-30.png"
+      },
+      {
+        "img": "/LDPID10000005-image-31.png"
+      },
+      {
+        "img": "/LDPID10000005-image-32.png"
+      },
+      {
+        "img": "/LDPID10000005-image-33.png"
+      },
+      {
+        "img": "/LDPID10000005-image-34.png"
+      },
+      {
+        "img": "/LDPID10000005-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000006",
+    "agentId": 3,
+    "title": "Luxury Lake House",
+    "description": "Modern lakeside living with a private dock and breathtaking sunrise views.",
+    "price": 895000,
+    "status": "For Rent",
+    "type": "Lake House",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "area": "3900 sqft",
+    "location": "Lake Tahoe, Nevada",
+    "specialFeatures": [
+      "Private Boat Dock",
+      "Lakefront Deck",
+      "Kayak & Paddleboard Storage",
+      "Outdoor Kitchen & BBQ Area",
+      "Floor Heating",
+      "Massive Great Room",
+      "Master Suite with Lake View",
+      "Hot Tub on Deck",
+      "High-End Appliances",
+      "Guest House / Cabin"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000006-cover.png"
+      },
+      {
+        "img": "/LDPID10000006-image-1.png"
+      },
+      {
+        "img": "/LDPID10000006-image-2.png"
+      },
+      {
+        "img": "/LDPID10000006-image-3.png"
+      },
+      {
+        "img": "/LDPID10000006-image-4.png"
+      },
+      {
+        "img": "/LDPID10000006-image-5.png"
+      },
+      {
+        "img": "/LDPID10000006-image-6.png"
+      },
+      {
+        "img": "/LDPID10000006-image-7.png"
+      },
+      {
+        "img": "/LDPID10000006-image-8.png"
+      },
+      {
+        "img": "/LDPID10000006-image-9.png"
+      },
+      {
+        "img": "/LDPID10000006-image-10.png"
+      },
+      {
+        "img": "/LDPID10000006-image-11.png"
+      },
+      {
+        "img": "/LDPID10000006-image-12.png"
+      },
+      {
+        "img": "/LDPID10000006-image-13.png"
+      },
+      {
+        "img": "/LDPID10000006-image-14.png"
+      },
+      {
+        "img": "/LDPID10000006-image-15.png"
+      },
+      {
+        "img": "/LDPID10000006-image-16.png"
+      },
+      {
+        "img": "/LDPID10000006-image-17.png"
+      },
+      {
+        "img": "/LDPID10000006-image-18.png"
+      },
+      {
+        "img": "/LDPID10000006-image-19.png"
+      },
+      {
+        "img": "/LDPID10000006-image-20.png"
+      },
+      {
+        "img": "/LDPID10000006-image-21.png"
+      },
+      {
+        "img": "/LDPID10000006-image-22.png"
+      },
+      {
+        "img": "/LDPID10000006-image-23.png"
+      },
+      {
+        "img": "/LDPID10000006-image-24.png"
+      },
+      {
+        "img": "/LDPID10000006-image-25.png"
+      },
+      {
+        "img": "/LDPID10000006-image-26.png"
+      },
+      {
+        "img": "/LDPID10000006-image-27.png"
+      },
+      {
+        "img": "/LDPID10000006-image-28.png"
+      },
+      {
+        "img": "/LDPID10000006-image-29.png"
+      },
+      {
+        "img": "/LDPID10000006-image-30.png"
+      },
+      {
+        "img": "/LDPID10000006-image-31.png"
+      },
+      {
+        "img": "/LDPID10000006-image-32.png"
+      },
+      {
+        "img": "/LDPID10000006-image-33.png"
+      },
+      {
+        "img": "/LDPID10000006-image-34.png"
+      },
+      {
+        "img": "/LDPID10000006-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000007",
+    "agentId": 4,
+    "title": "Urban Loft Residence",
+    "description": "A contemporary loft with industrial-inspired interiors and open living spaces.",
+    "price": 375000,
+    "status": "For Rent",
+    "type": "Loft",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": "1700 sqft",
+    "location": "Chicago, Illinois",
+    "specialFeatures": [
+      "Exposed Brick Walls",
+      "12ft High Ceilings",
+      "Industrial Windows",
+      "Concrete Flooring",
+      "Custom Lighting System",
+      "Open Kitchen Island",
+      "Rooftop Deck Access",
+      "Bike Storage",
+      "Pet Friendly",
+      "Artist Studio Space"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000007-cover.png"
+      },
+      {
+        "img": "/LDPID10000007-image-1.png"
+      },
+      {
+        "img": "/LDPID10000007-image-2.png"
+      },
+      {
+        "img": "/LDPID10000007-image-3.png"
+      },
+      {
+        "img": "/LDPID10000007-image-4.png"
+      },
+      {
+        "img": "/LDPID10000007-image-5.png"
+      },
+      {
+        "img": "/LDPID10000007-image-6.png"
+      },
+      {
+        "img": "/LDPID10000007-image-7.png"
+      },
+      {
+        "img": "/LDPID10000007-image-8.png"
+      },
+      {
+        "img": "/LDPID10000007-image-9.png"
+      },
+      {
+        "img": "/LDPID10000007-image-10.png"
+      },
+      {
+        "img": "/LDPID10000007-image-11.png"
+      },
+      {
+        "img": "/LDPID10000007-image-12.png"
+      },
+      {
+        "img": "/LDPID10000007-image-13.png"
+      },
+      {
+        "img": "/LDPID10000007-image-14.png"
+      },
+      {
+        "img": "/LDPID10000007-image-15.png"
+      },
+      {
+        "img": "/LDPID10000007-image-16.png"
+      },
+      {
+        "img": "/LDPID10000007-image-17.png"
+      },
+      {
+        "img": "/LDPID10000007-image-18.png"
+      },
+      {
+        "img": "/LDPID10000007-image-19.png"
+      },
+      {
+        "img": "/LDPID10000007-image-20.png"
+      },
+      {
+        "img": "/LDPID10000007-image-21.png"
+      },
+      {
+        "img": "/LDPID10000007-image-22.png"
+      },
+      {
+        "img": "/LDPID10000007-image-23.png"
+      },
+      {
+        "img": "/LDPID10000007-image-24.png"
+      },
+      {
+        "img": "/LDPID10000007-image-25.png"
+      },
+      {
+        "img": "/LDPID10000007-image-26.png"
+      },
+      {
+        "img": "/LDPID10000007-image-27.png"
+      },
+      {
+        "img": "/LDPID10000007-image-28.png"
+      },
+      {
+        "img": "/LDPID10000007-image-29.png"
+      },
+      {
+        "img": "/LDPID10000007-image-30.png"
+      },
+      {
+        "img": "/LDPID10000007-image-31.png"
+      },
+      {
+        "img": "/LDPID10000007-image-32.png"
+      },
+      {
+        "img": "/LDPID10000007-image-33.png"
+      },
+      {
+        "img": "/LDPID10000007-image-34.png"
+      },
+      {
+        "img": "/LDPID10000007-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000008",
+    "agentId": 4,
+    "title": "Royal Palm Mansion",
+    "description": "An exclusive mansion featuring a home cinema, gym, pool and landscaped gardens.",
+    "price": 3200000,
+    "status": "For Sale",
+    "type": "Mansion",
+    "bedrooms": 7,
+    "bathrooms": 8,
+    "area": "9800 sqft",
+    "location": "Beverly Hills, California",
+    "specialFeatures": [
+      "Private Swimming Pool",
+      "Home Cinema Theater",
+      "Fully Equipped Gym",
+      "Landscaped Botanical Garden",
+      "Guest House",
+      "Wine Cellar",
+      "Smart Home Technology",
+      "6-Car Garage",
+      "Jacuzzi & Sauna",
+      "Helipad"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000008-cover.png"
+      },
+      {
+        "img": "/LDPID10000008-image-1.png"
+      },
+      {
+        "img": "/LDPID10000008-image-2.png"
+      },
+      {
+        "img": "/LDPID10000008-image-3.png"
+      },
+      {
+        "img": "/LDPID10000008-image-4.png"
+      },
+      {
+        "img": "/LDPID10000008-image-5.png"
+      },
+      {
+        "img": "/LDPID10000008-image-6.png"
+      },
+      {
+        "img": "/LDPID10000008-image-7.png"
+      },
+      {
+        "img": "/LDPID10000008-image-8.png"
+      },
+      {
+        "img": "/LDPID10000008-image-9.png"
+      },
+      {
+        "img": "/LDPID10000008-image-10.png"
+      },
+      {
+        "img": "/LDPID10000008-image-11.png"
+      },
+      {
+        "img": "/LDPID10000008-image-12.png"
+      },
+      {
+        "img": "/LDPID10000008-image-13.png"
+      },
+      {
+        "img": "/LDPID10000008-image-14.png"
+      },
+      {
+        "img": "/LDPID10000008-image-15.png"
+      },
+      {
+        "img": "/LDPID10000008-image-16.png"
+      },
+      {
+        "img": "/LDPID10000008-image-17.png"
+      },
+      {
+        "img": "/LDPID10000008-image-18.png"
+      },
+      {
+        "img": "/LDPID10000008-image-19.png"
+      },
+      {
+        "img": "/LDPID10000008-image-20.png"
+      },
+      {
+        "img": "/LDPID10000008-image-21.png"
+      },
+      {
+        "img": "/LDPID10000008-image-22.png"
+      },
+      {
+        "img": "/LDPID10000008-image-23.png"
+      },
+      {
+        "img": "/LDPID10000008-image-24.png"
+      },
+      {
+        "img": "/LDPID10000008-image-25.png"
+      },
+      {
+        "img": "/LDPID10000008-image-26.png"
+      },
+      {
+        "img": "/LDPID10000008-image-27.png"
+      },
+      {
+        "img": "/LDPID10000008-image-28.png"
+      },
+      {
+        "img": "/LDPID10000008-image-29.png"
+      },
+      {
+        "img": "/LDPID10000008-image-30.png"
+      },
+      {
+        "img": "/LDPID10000008-image-31.png"
+      },
+      {
+        "img": "/LDPID10000008-image-32.png"
+      },
+      {
+        "img": "/LDPID10000008-image-33.png"
+      },
+      {
+        "img": "/LDPID10000008-image-34.png"
+      },
+      {
+        "img": "/LDPID10000008-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000009",
+    "agentId": 5,
+    "title": "Sunset Townhouse",
+    "description": "A beautifully designed townhouse perfect for modern family living.",
+    "price": 510000,
+    "status": "For Sale",
+    "type": "Townhouse",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": "2400 sqft",
+    "location": "Seattle, Washington",
+    "specialFeatures": [
+      "Private Rooftop Terrace",
+      "Attached 2-Car Garage",
+      "Modern Open Kitchen",
+      "Smart Thermostat",
+      "Hardwood Flooring",
+      "Spacious Master Suite",
+      "Balcony with Sunset Views",
+      "Community Park Nearby",
+      "EV Charging Station",
+      "High-End Finishes"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000009-cover.png"
+      },
+      {
+        "img": "/LDPID10000009-image-1.png"
+      },
+      {
+        "img": "/LDPID10000009-image-2.png"
+      },
+      {
+        "img": "/LDPID10000009-image-3.png"
+      },
+      {
+        "img": "/LDPID10000009-image-4.png"
+      },
+      {
+        "img": "/LDPID10000009-image-5.png"
+      },
+      {
+        "img": "/LDPID10000009-image-6.png"
+      },
+      {
+        "img": "/LDPID10000009-image-7.png"
+      },
+      {
+        "img": "/LDPID10000009-image-8.png"
+      },
+      {
+        "img": "/LDPID10000009-image-9.png"
+      },
+      {
+        "img": "/LDPID10000009-image-10.png"
+      },
+      {
+        "img": "/LDPID10000009-image-11.png"
+      },
+      {
+        "img": "/LDPID10000009-image-12.png"
+      },
+      {
+        "img": "/LDPID10000009-image-13.png"
+      },
+      {
+        "img": "/LDPID10000009-image-14.png"
+      },
+      {
+        "img": "/LDPID10000009-image-15.png"
+      },
+      {
+        "img": "/LDPID10000009-image-16.png"
+      },
+      {
+        "img": "/LDPID10000009-image-17.png"
+      },
+      {
+        "img": "/LDPID10000009-image-18.png"
+      },
+      {
+        "img": "/LDPID10000009-image-19.png"
+      },
+      {
+        "img": "/LDPID10000009-image-20.png"
+      },
+      {
+        "img": "/LDPID10000009-image-21.png"
+      },
+      {
+        "img": "/LDPID10000009-image-22.png"
+      },
+      {
+        "img": "/LDPID10000009-image-23.png"
+      },
+      {
+        "img": "/LDPID10000009-image-24.png"
+      },
+      {
+        "img": "/LDPID10000009-image-25.png"
+      },
+      {
+        "img": "/LDPID10000009-image-26.png"
+      },
+      {
+        "img": "/LDPID10000009-image-27.png"
+      },
+      {
+        "img": "/LDPID10000009-image-28.png"
+      },
+      {
+        "img": "/LDPID10000009-image-29.png"
+      },
+      {
+        "img": "/LDPID10000009-image-30.png"
+      },
+      {
+        "img": "/LDPID10000009-image-31.png"
+      },
+      {
+        "img": "/LDPID10000009-image-32.png"
+      },
+      {
+        "img": "/LDPID10000009-image-33.png"
+      },
+      {
+        "img": "/LDPID10000009-image-34.png"
+      },
+      {
+        "img": "/LDPID10000009-image-35.png"
+      }
+    ]
+  },
+  {
+    "propertyId": "LDPID10000010",
+    "agentId": 5,
+    "title": "Ocean Breeze Condo",
+    "description": "A bright waterfront condo with a spacious balcony overlooking the sea.",
+    "price": 680000,
+    "status": "For Rent",
+    "type": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area": "1850 sqft",
+    "location": "Miami, Florida",
+    "specialFeatures": [
+      "Oceanfront Balcony",
+      "Resort-Style Pool",
+      "Fitness Center",
+      "24-Hour Security",
+      "Valet Parking",
+      "Beach Access",
+      "Stainless Steel Appliances",
+      "Walk-in Shower",
+      "Hurricane Impact Windows",
+      "Boat Slip Available"
+    ],
+    "images": [
+      {
+        "img": "/LDPID10000010-cover.png"
+      },
+      {
+        "img": "/LDPID10000010-image-1.png"
+      },
+      {
+        "img": "/LDPID10000010-image-2.png"
+      },
+      {
+        "img": "/LDPID10000010-image-3.png"
+      },
+      {
+        "img": "/LDPID10000010-image-4.png"
+      },
+      {
+        "img": "/LDPID10000010-image-5.png"
+      },
+      {
+        "img": "/LDPID10000010-image-6.png"
+      },
+      {
+        "img": "/LDPID10000010-image-7.png"
+      },
+      {
+        "img": "/LDPID10000010-image-8.png"
+      },
+      {
+        "img": "/LDPID10000010-image-9.png"
+      },
+      {
+        "img": "/LDPID10000010-image-10.png"
+      },
+      {
+        "img": "/LDPID10000010-image-11.png"
+      },
+      {
+        "img": "/LDPID10000010-image-12.png"
+      },
+      {
+        "img": "/LDPID10000010-image-13.png"
+      },
+      {
+        "img": "/LDPID10000010-image-14.png"
+      },
+      {
+        "img": "/LDPID10000010-image-15.png"
+      },
+      {
+        "img": "/LDPID10000010-image-16.png"
+      },
+      {
+        "img": "/LDPID10000010-image-17.png"
+      },
+      {
+        "img": "/LDPID10000010-image-18.png"
+      },
+      {
+        "img": "/LDPID10000010-image-19.png"
+      },
+      {
+        "img": "/LDPID10000010-image-20.png"
+      },
+      {
+        "img": "/LDPID10000010-image-21.png"
+      },
+      {
+        "img": "/LDPID10000010-image-22.png"
+      },
+      {
+        "img": "/LDPID10000010-image-23.png"
+      },
+      {
+        "img": "/LDPID10000010-image-24.png"
+      },
+      {
+        "img": "/LDPID10000010-image-25.png"
+      },
+      {
+        "img": "/LDPID10000010-image-26.png"
+      },
+      {
+        "img": "/LDPID10000010-image-27.png"
+      },
+      {
+        "img": "/LDPID10000010-image-28.png"
+      },
+      {
+        "img": "/LDPID10000010-image-29.png"
+      },
+      {
+        "img": "/LDPID10000010-image-30.png"
+      },
+      {
+        "img": "/LDPID10000010-image-31.png"
+      },
+      {
+        "img": "/LDPID10000010-image-32.png"
+      },
+      {
+        "img": "/LDPID10000010-image-33.png"
+      },
+      {
+        "img": "/LDPID10000010-image-34.png"
+      },
+      {
+        "img": "/LDPID10000010-image-35.png"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "James Anderson",
+    "position": "Senior Property Consultant",
+    "image": "agent-1.jpg",
+    "phone": "+1 (555) 201-1001",
+    "email": "james.anderson@dreamhomes.com",
+    "experience": "12 Years",
+    "status": "Active",
+    "properties": 2,
+    "rating": 4.9,
+    "location": "New York, USA",
+    "bio": "Luxury real estate specialist with over a decade of experience helping clients buy and sell premium properties."
+  },
+  {
+    "id": 2,
+    "name": "Sophia Martinez",
+    "position": "Luxury Home Specialist",
+    "image": "agent-2.jpg",
+    "phone": "+1 (555) 201-1002",
+    "email": "sophia.martinez@dreamhomes.com",
+    "experience": "10 Years",
+    "status": "inactive",
+    "properties": 2,
+    "rating": 4.8,
+    "location": "Los Angeles, USA",
+    "bio": "Passionate about helping families find their dream homes with personalized service."
+  },
+  {
+    "id": 3,
+    "name": "Daniel Wilson",
+    "position": "Commercial Property Expert",
+    "image": "agent-3.jpg",
+    "phone": "+1 (555) 201-1003",
+    "email": "daniel.wilson@dreamhomes.com",
+    "experience": "15 Years",
+    "status": "Active",
+    "properties": 2,
+    "rating": 5.0,
+    "location": "Chicago, USA",
+    "bio": "Specializes in commercial properties, office spaces, and investment opportunities."
+  },
+  {
+    "id": 4,
+    "name": "Emily Johnson",
+    "position": "Residential Sales Expert",
+    "image": "agent-4.jpg",
+    "phone": "+1 (555) 201-1004",
+    "email": "emily.johnson@dreamhomes.com",
+    "experience": "8 Years",
+    "status": "inactive",
+    "properties": 2,
+    "rating": 4.7,
+    "location": "Miami, USA",
+    "bio": "Known for exceptional negotiation skills and helping first-time buyers."
+  },
+  {
+    "id": 5,
+    "name": "Michael Brown",
+    "position": "Property Investment Advisor",
+    "image": "agent-5.jpg",
+    "phone": "+1 (555) 201-1005",
+    "email": "michael.brown@dreamhomes.com",
+    "experience": "14 Years",
+    "status": "Active",
+    "properties": 2,
+    "rating": 4.9,
+    "location": "Houston, USA",
+    "bio": "Helps investors maximize returns through strategic real estate investments."
+  }
+]
