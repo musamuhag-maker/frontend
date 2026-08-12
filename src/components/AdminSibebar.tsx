@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 function AdminSidebar() {
     const navigate = useNavigate();
     return (
-        
+
         <aside className="fixed left-0 top-0 z-50 flex h-screen w-64 flex-col bg-white text-black">
 
             <motion.div
@@ -53,7 +53,7 @@ function AdminSidebar() {
                     Dashboard
                 </NavLink>
                 <NavLink
-                    to="/admin/pendingregistrations"
+                    to="/admin/pendingagents"
                     className={({ isActive }) =>
                         `flex items-center gap-3 rounded-lg px-4 font-semibold py-3 ${isActive
                             ? "bg-blue-100 text-blue-600"
@@ -66,7 +66,7 @@ function AdminSidebar() {
                 </NavLink>
 
                 <NavLink
-                    to="/admin/propertiees"
+                    to="/admin/users"
                     className={({ isActive }) =>
                         `flex items-center gap-3 rounded-lg font-semibold px-4 py-3 ${isActive
                             ? "bg-blue-100 text-blue-600"
@@ -75,7 +75,7 @@ function AdminSidebar() {
                     }
                 >
                     <TbBuildingSkyscraper size={25} />
-                    Properties
+                   Total Users
                 </NavLink>
 
                 <NavLink
@@ -90,7 +90,7 @@ function AdminSidebar() {
                     <BriefcaseBusiness size={20} />
                     Agents
                 </NavLink>
-                
+
 
                 <NavLink
                     to="/admin/totalUsers"
@@ -105,15 +105,15 @@ function AdminSidebar() {
                     Users
                 </NavLink>
 
-                
+
 
             </motion.nav>
 
             {/* Logout */}
             <div className="border-t border-slate-700 p-4">
-                <button 
-                onClick={ () => navigate("/") }
-                className="flex bg-red-700/20 w-full items-center gap-3 rounded-lg px-4 py-3 text-red-800 cursor-pointer hover:bg-red-500/20 hover:text-red-400">
+                <button
+                    onClick={() => navigate("/")}
+                    className="flex bg-red-700/20 w-full items-center gap-3 rounded-lg px-4 py-3 text-red-800 cursor-pointer hover:bg-red-500/20 hover:text-red-400">
                     <LogOut size={20} />
                     Logout
                 </button>

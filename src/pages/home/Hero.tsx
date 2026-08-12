@@ -4,159 +4,159 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Hero() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <div>
-            <div className="flex justify-between bg-black">
+  return (
+    <section className="w-full overflow-hidden">
+      <div className="flex min-h-[calc(100vh-5rem)] flex-col lg:flex-row">
 
-                {/* Left Side */}
-                <motion.div
-                    initial={{ x: -60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                    className="bg-gray-50 w-1/2 pt-20 pl-3"
-                >
+        {/* LEFT SIDE */}
+        <motion.div
+          initial={{ x: -60, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="flex w-full flex-col justify-center bg-gray-50 px-5 py-12 sm:px-8 sm:py-16 lg:w-1/2 lg:px-10 xl:px-16"
+        >
+          {/* Trusted */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="mb-5 flex items-center gap-2 text-sm font-semibold text-blue-600 sm:text-base"
+          >
+            <BsShieldFillCheck className="shrink-0 text-lg sm:text-xl" />
 
-                    <motion.h1
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                        className="text-blue-600 flex gap-2 mb-5 items-center"
-                    >
-                        <BsShieldFillCheck />
-                        Trusted by Thousands
-                    </motion.h1>
+            <span>Trusted by Thousands</span>
+          </motion.div>
 
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.6 }}
-                        className="text-2xl text-black font-bold mb-3.5"
-                    >
-                        Discover Exceptional Properties Designed
-                        <br />
-                        for Your{" "}
-                        <span className="text-blue-600">
-                            Lifestyle
-                        </span>.
-                    </motion.h1>
+          {/* Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl md:text-5xl xl:text-6xl"
+          >
+            Discover Exceptional Properties Designed for Your{" "}
+            <span className="text-blue-600">
+              Lifestyle
+            </span>
+            .
+          </motion.h1>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.5 }}
-                        className="text-[14px]"
-                    >
-                        Your journey to finding the perfect property begins here.
-                        Explore our
-                        <br />
-                        listings to find the home that matches your dreams.
-                    </motion.p>
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="mt-5 max-w-xl text-sm leading-6 text-gray-600 sm:text-base sm:leading-7"
+          >
+            Your journey to finding the perfect property begins here.
+            Explore our listings to find the home that matches your dreams.
+          </motion.p>
 
-                    {/* Buttons */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5, duration: 0.5 }}
-                        className="flex gap-5"
-                    >
-                        <motion.button
-                            whileHover={{ y: -3 }}
-                            whileTap={{ scale: 0.97 }}
-                            onClick={() => navigate("/properties")}
-                            className="flex items-center gap-2 cursor-pointer px-5 py-4 rounded-md font-semibold border mt-10 text-white bg-blue-600"
-                        >
-                            Browse Properties
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4"
+          >
+            <motion.button
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => navigate("/properties")}
+              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 font-semibold text-white shadow-lg shadow-blue-200 transition-colors hover:bg-blue-700 sm:w-auto"
+            >
+              Browse Properties
 
-                            <motion.span
-                                whileHover={{ x: 4 }}
-                            >
-                                <FaArrowRight className="text-sm" />
-                            </motion.span>
-                        </motion.button>
+              <motion.span whileHover={{ x: 4 }}>
+                <FaArrowRight className="text-sm" />
+              </motion.span>
+            </motion.button>
 
-                        <motion.button
-                            whileHover={{ y: -3 }}
-                            whileTap={{ scale: 0.97 }}
-                            onClick={() => navigate("/about")}
-                            className="cursor-pointer px-5 py-3 bg-blue-50 rounded-md font-semibold border mt-10 text-blue-600"
-                        >
-                            Learn More
-                        </motion.button>
-                    </motion.div>
+            <motion.button
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => navigate("/about")}
+              className="w-full cursor-pointer rounded-xl border border-blue-100 bg-blue-50 px-5 py-3.5 font-semibold text-blue-600 transition-colors hover:bg-blue-100 sm:w-auto"
+            >
+              Learn More
+            </motion.button>
+          </motion.div>
 
-                    {/* Statistics */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6, duration: 0.6 }}
-                        className="flex gap-5"
-                    >
+          {/* Statistics */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="mt-8 grid grid-cols-1 gap-3 min-[420px]:grid-cols-3 sm:mt-10 sm:gap-4"
+          >
+            {/* Customers */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-bold text-blue-600 sm:text-3xl">
+                200+
+              </h2>
 
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bg-white border border-gray-200 rounded-xl mt-10 p-3 w-40 shadow-sm shadow-black"
-                        >
-                            <h2 className="text-3xl font-bold text-blue-600">
-                                200+
-                            </h2>
+              <p className="mt-1 text-xs text-gray-600 sm:text-sm">
+                Happy Customers
+              </p>
+            </motion.div>
 
-                            <p className="text-[15px] text-gray-600">
-                                Happy Customers
-                            </p>
-                        </motion.div>
+            {/* Properties */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-bold text-blue-600 sm:text-3xl">
+                10+
+              </h2>
 
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bg-gray-50 border border-gray-200 rounded-xl mt-10 p-3 w-40 shadow-sm shadow-black"
-                        >
-                            <h2 className="text-3xl font-bold text-blue-600">
-                                10+
-                            </h2>
+              <p className="mt-1 text-xs text-gray-600 sm:text-sm">
+                Properties for Clients
+              </p>
+            </motion.div>
 
-                            <p className="text-[15px] text-gray-600">
-                                Properties for Clients
-                            </p>
-                        </motion.div>
+            {/* Experience */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-bold text-blue-600 sm:text-3xl">
+                16+
+              </h2>
 
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bg-gray-50 border border-gray-200 rounded-xl mt-10 p-3 w-40 shadow-sm shadow-black"
-                        >
-                            <h2 className="text-3xl font-bold text-blue-600">
-                                16+
-                            </h2>
+              <p className="mt-1 text-xs text-gray-600 sm:text-sm">
+                Years of Experience
+              </p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
 
-                            <p className="text-[15px] text-gray-600">
-                                Years of Experience
-                            </p>
-                        </motion.div>
+        {/* RIGHT SIDE */}
+        <motion.div
+          initial={{ x: 60, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative w-full overflow-hidden bg-white lg:w-1/2"
+        >
+          <motion.img
+            initial={{ scale: 1.05 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1 }}
+            src="/Herosectionimg.png"
+            alt="Luxury property"
+            className="h-72 w-full object-cover sm:h-96 lg:h-full lg:min-h-[calc(100vh-5rem)]"
+          />
 
-                    </motion.div>
-
-                </motion.div>
-
-                {/* Right Side */}
-                <motion.div
-                    initial={{ x: 60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="bg-white w-1/2"
-                >
-                    <motion.img
-                        initial={{ scale: 1.05 }}
-                        animate={{ scale: 1 }}
-                        transition={{ duration: 1 }}
-                        src="/Herosectionimg.png"
-                        alt="Luxury property"
-                        className="w-full"
-                    />
-                </motion.div>
-
-            </div>
-        </div>
-    );
+          {/* Image overlay */}
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent" />
+        </motion.div>
+      </div>
+    </section>
+  );
 }
 
 export default Hero;

@@ -43,7 +43,7 @@ function Login() {
 
         try {
             const response = await
-                fetch("http://localhost:5001/api/loginUser", {
+                fetch("http://localhost:5001/api/loginUsers", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

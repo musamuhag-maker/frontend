@@ -16,6 +16,12 @@ import NotFound from "./public/NotFound";
 import ProtectedRoute from "./components/protectedRoute";
 import AdminDashbooard from "./dashboards/admindashboard/AdminDashbooard";
 import AdminLayout from "./components/adminLayout";
+import AgentLogin from "./dashboards/admindashboard/AdminLogin";
+import ProtectedAdminRoute from "./components/adminProtectedroute";
+import AgentSignup from "./public/AgentSighnup";
+import PendingAgents from "./dashboards/admindashboard/Pendingregistration";
+import AgentDashoard from "./dashboards/AgentDashoard";
+import AllUsers from "./dashboards/admindashboard/users";
 
 function App() {
   return (
@@ -24,10 +30,10 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/agent/dashboard" element={<AgentDashoard />} />
 
         <Route
           element={<Layout />}>
-
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -40,18 +46,32 @@ function App() {
           </Route>
           <Route path="/services" element={<Services />} />
         </Route>
+        <Route
+          path="/agent/signup"
+          element={<AgentSignup />}
+        />
 
         {/* Admin Route */}
-        <Route
-          path="/admin"
-          element={
-            <AdminLayout />
-          }
-        >
-
+        <Route element={<ProtectedAdminRoute />}>
           <Route
-            path="dashboard" element={<AdminDashbooard />} />
+            path="/admin"
+            element={
+              <AdminLayout />
+            }
+          >
+            <Route
+              path="dashboard" element={<AdminDashbooard />} />
+            <Route
+              path="pendingagents" element={<PendingAgents />} />
+            <Route
+              path="users" element={<AllUsers />} />
+          </Route>
         </Route>
+        <Route
+          path="/admin-secret-login-2098"
+          element={<AgentLogin />}
+        />
+
         <Route path="/*" element={<NotFound />} />
       </Routes>
 
