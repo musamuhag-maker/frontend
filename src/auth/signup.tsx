@@ -17,6 +17,10 @@ function Signup() {
     const [passwordError, setPasswordError] = useState("");
     const [confirmPasswordError, setConfirmPasswordError] = useState("");
 
+    const API_URL =
+        import.meta.env.VITE_API_URL ||
+        "https://luxury-dwells-backend.onrender.com";
+
     const validate = () => {
         let valid = true;
 
@@ -42,7 +46,9 @@ function Signup() {
             setPasswordError("Password is required");
             valid = false;
         } else if (password.length < 8) {
-            setPasswordError("Password must be at least 8 characters");
+            setPasswordError(
+                "Password must be at least 8 characters"
+            );
             valid = false;
         }
 
@@ -61,37 +67,44 @@ function Signup() {
         if (!validate()) return;
 
         try {
-            const response = await fetch("http://localhost:5001/api/users", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    fullname: name,
-                    email,
-                    role: "user",
-                    password,
-                }),
-            });
+            const response = await fetch(
+                `${API_URL}/api/users`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        fullname: name,
+                        email,
+                        role: "user",
+                        password,
+                    }),
+                }
+            );
 
             const data = await response.json();
 
             if (response.ok) {
                 toast.success("Account Created", {
-                    description: "Your account has been created successfully.",
+                    description:
+                        "Your account has been created successfully.",
                 });
 
                 navigate("/login");
             } else {
                 toast.error("Signup Failed", {
-                    description: data.message || "Unable to create account.",
+                    description:
+                        data.message ||
+                        "Unable to create account.",
                 });
             }
         } catch (error) {
-            console.error(error);
+            console.error("Signup error:", error);
 
             toast.error("Server Error", {
-                description: "Unable to connect to the server.",
+                description:
+                    "Unable to connect to the server.",
             });
         }
     };
@@ -121,55 +134,83 @@ function Signup() {
                 </div>
 
                 <div className="ml-0.5 flex flex-col items-center gap-2">
-                    <BiCheckShield size={23} className="text-green-500" />
-                    <p>Secure and trusted property platform</p>
+                    <BiCheckShield
+                        size={23}
+                        className="text-green-500"
+                    />
+
+                    <p>
+                        Secure and trusted property platform
+                    </p>
                 </div>
 
                 <div className="mt-5 ml-8">
                     <h3>Fullname</h3>
+
                     <input
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) =>
+                            setName(e.target.value)
+                        }
                         type="text"
                         placeholder="Enter your full name"
                         className="border border-blue-200 w-100 h-15 rounded-xl p-2"
                     />
-                    <p className="text-red-600 text-sm mt-1">{nameError}</p>
+
+                    <p className="text-red-600 text-sm mt-1">
+                        {nameError}
+                    </p>
                 </div>
 
                 <div className="mt-5 ml-8">
                     <h3>Email</h3>
+
                     <input
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={(e) =>
+                            setEmail(e.target.value)
+                        }
                         type="email"
                         placeholder="Enter your Email"
                         className="border border-blue-200 w-100 h-15 rounded-xl p-2"
                     />
-                    <p className="text-red-600 text-sm mt-1">{emailError}</p>
+
+                    <p className="text-red-600 text-sm mt-1">
+                        {emailError}
+                    </p>
                 </div>
 
                 <div className="mt-5 ml-8">
                     <h3>Password</h3>
+
                     <input
                         value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(e) =>
+                            setPassword(e.target.value)
+                        }
                         type="password"
                         placeholder="Enter your Password"
                         className="border border-blue-200 w-100 h-15 rounded-xl p-2"
                     />
-                    <p className="text-red-600 text-sm mt-1">{passwordError}</p>
+
+                    <p className="text-red-600 text-sm mt-1">
+                        {passwordError}
+                    </p>
                 </div>
 
                 <div className="mt-5 ml-8">
                     <h3>Confirm Password</h3>
+
                     <input
                         value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        onChange={(e) =>
+                            setConfirmPassword(e.target.value)
+                        }
                         type="password"
                         placeholder="Confirm your password"
                         className="border border-blue-200 w-100 h-15 rounded-xl p-2"
                     />
+
                     <p className="text-red-600 text-sm mt-1">
                         {confirmPasswordError}
                     </p>
@@ -184,7 +225,11 @@ function Signup() {
 
                 <p className="flex gap-2 ml-30 mt-4">
                     Already have an account?
-                    <Link to="/login" className="underline text-blue-600">
+
+                    <Link
+                        to="/login"
+                        className="underline text-blue-600"
+                    >
                         Login
                     </Link>
                 </p>

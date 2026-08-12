@@ -13,6 +13,10 @@ function Login() {
     const [emailError, setEmailError] = useState("");
     const [passwordError, setPasswordError] = useState("");
 
+    const API_URL =
+        import.meta.env.VITE_API_URL ||
+        "https://luxury-dwells-backend.onrender.com";
+
     const validate = () => {
         let valid = true;
 
@@ -42,8 +46,9 @@ function Login() {
         if (!validate()) return;
 
         try {
-            const response = await
-                fetch("http://localhost:5001/api/loginUsers", {
+            const response = await fetch(
+                `${API_URL}/api/loginUsers`,
+                {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -52,31 +57,38 @@ function Login() {
                         email,
                         password,
                     }),
-                });
+                }
+            );
 
             const data = await response.json();
 
-
             if (response.ok) {
-
                 localStorage.setItem("token", data.token);
-                localStorage.setItem("user", JSON.stringify(data.data));
-
+                localStorage.setItem(
+                    "user",
+                    JSON.stringify(data.data)
+                );
 
                 toast.success("Login Successful", {
                     description: "Welcome back to Luxury Dwell!",
                 });
+
                 console.log(data);
+
                 navigate("/");
             } else {
                 toast.error("Login Failed", {
-                    description: data.message || "Invalid email or password.",
+                    description:
+                        data.message ||
+                        "Invalid email or password.",
                 });
             }
         } catch (error) {
-            console.error(error);
+            console.error("Login error:", error);
+
             toast.error("Unable To Connect To The Server.", {
-                description: "Please try again later.",
+                description:
+                    "Please check your internet connection and try again.",
             });
         }
     };
@@ -86,7 +98,10 @@ function Login() {
             <motion.div
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: easeInOut }}
+                transition={{
+                    duration: 1,
+                    ease: easeInOut,
+                }}
                 className="w-120 bg-white/60 rounded-2xl h-160 mt-8 shadow-2xl p-2 shadow-blue-300"
             >
                 <div className="text-center mb-8 flex flex-col items-center">
@@ -106,8 +121,14 @@ function Login() {
                 </div>
 
                 <div className="ml-0.5 flex flex-col items-center gap-2">
-                    <BiCheckShield size={23} className="text-green-500" />
-                    <p>Secure and trusted property platform</p>
+                    <BiCheckShield
+                        size={23}
+                        className="text-green-500"
+                    />
+
+                    <p>
+                        Secure and trusted property platform
+                    </p>
                 </div>
 
                 <div className="mt-10">
@@ -116,7 +137,9 @@ function Login() {
 
                         <input
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) =>
+                                setEmail(e.target.value)
+                            }
                             type="email"
                             placeholder="Enter your Email"
                             className="border border-blue-200 w-100 h-15 rounded-xl p-2"
@@ -132,7 +155,9 @@ function Login() {
 
                         <input
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(e) =>
+                                setPassword(e.target.value)
+                            }
                             type="password"
                             placeholder="Enter your Password"
                             className="border border-blue-200 w-100 h-15 rounded-xl p-2"
