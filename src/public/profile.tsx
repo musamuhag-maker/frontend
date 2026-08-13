@@ -16,7 +16,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5001";
+const API_URL = "https://luxury-dwells-backend.onrender.com";
 
 const fetchJSON = async (url: string, options: RequestInit) => {
   const res = await fetch(url, options);
@@ -93,7 +93,6 @@ export default function Profile() {
         });
 
         setProfile(data.data);
-
         setAgentStatus(data.data.agentStatus || "");
       } catch (err: any) {
         setError(err.message);
@@ -106,7 +105,7 @@ export default function Profile() {
   }, [token]);
 
   const handleUpdateProfile = async () => {
-    if (!profile) return;
+    if (!profile || !token) return;
 
     setSaving(true);
     setMessage("");
@@ -142,8 +141,18 @@ export default function Profile() {
       return;
     }
 
+    if (newPassword.length < 8) {
+      setPasswordErr("New password must be at least 8 characters.");
+      return;
+    }
+
     if (newPassword !== confirmPassword) {
       setPasswordErr("Passwords do not match.");
+      return;
+    }
+
+    if (!token) {
+      setPasswordErr("Please login again.");
       return;
     }
 
@@ -182,16 +191,12 @@ export default function Profile() {
 
   const handleVerifyNIN = async () => {
     if (!nin) {
-      setNinError(
-        "Please enter your National Identification Number."
-      );
+      setNinError("Please enter your National Identification Number.");
       return;
     }
 
     if (nin.length !== 11) {
-      setNinError(
-        "A valid NIN must contain exactly 11 digits."
-      );
+      setNinError("A valid NIN must contain exactly 11 digits.");
       return;
     }
 
@@ -199,6 +204,11 @@ export default function Profile() {
       setNinError(
         "Please agree to the declaration before continuing."
       );
+      return;
+    }
+
+    if (!token) {
+      setNinError("Please login again.");
       return;
     }
 
@@ -238,10 +248,7 @@ export default function Profile() {
             ease: "linear",
           }}
         >
-          <ShieldCheck
-            size={45}
-            className="text-blue-600"
-          />
+          <ShieldCheck size={45} className="text-blue-600" />
         </motion.div>
       </div>
     );
@@ -252,7 +259,7 @@ export default function Profile() {
       <div className="flex min-h-screen items-center justify-center bg-slate-100">
         <div className="rounded-xl bg-white p-8 shadow-lg">
           <p className="font-semibold text-red-600">
-            {error}
+            {error || "Unable to load profile."}
           </p>
         </div>
       </div>
@@ -262,7 +269,6 @@ export default function Profile() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-slate-100">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        {/* Become Agent - Initial Status */}
 
         {!agentStatus && (
           <motion.div
@@ -282,15 +288,12 @@ export default function Profile() {
                 </h2>
 
                 <p className="mt-5 text-blue-100">
-                  Upgrade your account and start listing
-                  properties, building trust and earning as a
-                  verified agent.
+                  Upgrade your account and start listing properties,
+                  building trust and earning as a verified agent.
                 </p>
 
                 <button
-                  onClick={() =>
-                    setShowUpgradeModal(true)
-                  }
+                  onClick={() => setShowUpgradeModal(true)}
                   className="mt-8 flex items-center gap-3 rounded-xl bg-white px-8 py-3 font-bold text-blue-700 transition hover:scale-105"
                 >
                   Upgrade Your Account
@@ -300,17 +303,12 @@ export default function Profile() {
 
               <div className="hidden items-center justify-center lg:flex">
                 <div className="flex h-60 w-60 items-center justify-center rounded-full border-8 border-white/20 bg-white/10">
-                  <ShieldCheck
-                    size={100}
-                    className="text-white"
-                  />
+                  <ShieldCheck size={100} className="text-white" />
                 </div>
               </div>
             </div>
           </motion.div>
         )}
-
-        {/* Pending */}
 
         {agentStatus === "pending" && (
           <motion.div
@@ -328,14 +326,12 @@ export default function Profile() {
             </h2>
 
             <p className="mt-3 text-gray-600">
-              Your Luxury Dwells Agent application has been
-              submitted. Our admin team is reviewing your
-              information. You will get access once approved.
+              Your Luxury Dwells Agent application has been submitted.
+              Our admin team is reviewing your information. You will get
+              access once approved.
             </p>
           </motion.div>
         )}
-
-        {/* Approved */}
 
         {agentStatus === "approved" && (
           <motion.div
@@ -353,14 +349,12 @@ export default function Profile() {
             </h2>
 
             <p className="mt-3 text-gray-600">
-              Your account is now a verified Luxury Dwells
-              Agent account.
+              Your account is now a verified Luxury Dwells Agent account.
             </p>
 
             <button
               onClick={() =>
-                (window.location.href =
-                  "/agent/dashboard")
+                (window.location.href = "/agent/dashboard")
               }
               className="mt-8 rounded-xl bg-green-600 px-8 py-3 font-bold text-white hover:bg-green-700"
             >
@@ -369,19 +363,15 @@ export default function Profile() {
           </motion.div>
         )}
 
-        {/* Rejected */}
-
         {agentStatus === "rejected" && (
-          <motion.div
-            className="mt-10 rounded-3xl border border-red-200 bg-red-50 p-6 text-center sm:p-10"
-          >
+          <motion.div className="mt-10 rounded-3xl border border-red-200 bg-red-50 p-6 text-center sm:p-10">
             <h2 className="text-3xl font-bold text-red-700">
               Application Rejected
             </h2>
 
             <p className="mt-3 text-gray-600">
-              Your application was not approved. You can
-              submit another application.
+              Your application was not approved. You can submit another
+              application.
             </p>
 
             <button
@@ -393,8 +383,6 @@ export default function Profile() {
           </motion.div>
         )}
 
-        {/* Profile */}
-
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -403,10 +391,7 @@ export default function Profile() {
           >
             <div className="flex justify-center">
               <div className="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-indigo-700">
-                <User
-                  size={60}
-                  className="text-white"
-                />
+                <User size={60} className="text-white" />
               </div>
             </div>
 
@@ -420,10 +405,7 @@ export default function Profile() {
 
             <div className="mt-8 space-y-5">
               <div className="flex items-center gap-4 rounded-xl bg-slate-100 p-4">
-                <Mail
-                  className="text-blue-600"
-                  size={20}
-                />
+                <Mail className="text-blue-600" size={20} />
 
                 <div className="min-w-0">
                   <p className="text-sm text-gray-500">
@@ -455,18 +437,13 @@ export default function Profile() {
             </div>
           </motion.div>
 
-          {/* Personal Information */}
-
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             className="rounded-3xl bg-white p-6 shadow-xl sm:p-8 lg:col-span-2"
           >
             <div className="mb-8 flex items-center gap-3">
-              <User
-                className="text-blue-600"
-                size={24}
-              />
+              <User className="text-blue-600" size={24} />
 
               <h2 className="text-2xl font-bold">
                 Personal Information
@@ -492,10 +469,7 @@ export default function Profile() {
                 </label>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 focus-within:border-blue-600">
-                  <User
-                    size={20}
-                    className="text-gray-400"
-                  />
+                  <User size={20} className="text-gray-400" />
 
                   <input
                     type="text"
@@ -517,10 +491,7 @@ export default function Profile() {
                 </label>
 
                 <div className="flex items-center gap-3 rounded-xl bg-slate-100 px-4 py-3">
-                  <Mail
-                    size={20}
-                    className="text-gray-400"
-                  />
+                  <Mail size={20} className="text-gray-400" />
 
                   <input
                     type="email"
@@ -542,8 +513,6 @@ export default function Profile() {
           </motion.div>
         </div>
 
-        {/* Change Password */}
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -551,10 +520,7 @@ export default function Profile() {
           className="mt-10 rounded-3xl bg-white p-6 shadow-xl sm:p-8"
         >
           <div className="mb-8 flex items-center gap-3">
-            <KeyRound
-              className="text-blue-600"
-              size={24}
-            />
+            <KeyRound className="text-blue-600" size={24} />
 
             <h2 className="text-2xl font-bold">
               Change Password
@@ -660,8 +626,6 @@ export default function Profile() {
           </button>
         </motion.div>
 
-        {/* Agent Upgrade */}
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -680,10 +644,9 @@ export default function Profile() {
               </h2>
 
               <p className="mt-6 text-lg leading-7 text-blue-100">
-                Upgrade your account today and become a
-                verified Agent. Verification is completed
-                using your National Identification Number
-                (NIN).
+                Upgrade your account today and become a verified Agent.
+                Verification is completed using your National
+                Identification Number (NIN).
               </p>
 
               <div className="mt-8 space-y-4">
@@ -724,9 +687,7 @@ export default function Profile() {
               </div>
 
               <button
-                onClick={() =>
-                  setShowUpgradeModal(true)
-                }
+                onClick={() => setShowUpgradeModal(true)}
                 className="mt-10 flex items-center gap-3 rounded-xl bg-white px-8 py-3 font-bold text-blue-700 transition hover:scale-105"
               >
                 Upgrade Your Account
@@ -737,16 +698,11 @@ export default function Profile() {
 
             <div className="hidden items-center justify-center lg:flex">
               <div className="flex h-64 w-64 items-center justify-center rounded-full border-8 border-white/20 bg-white/10 backdrop-blur">
-                <ShieldCheck
-                  size={100}
-                  className="text-white"
-                />
+                <ShieldCheck size={100} className="text-white" />
               </div>
             </div>
           </div>
         </motion.div>
-
-        {/* Upgrade Modal */}
 
         <AnimatePresence>
           {showUpgradeModal && (
@@ -774,9 +730,7 @@ export default function Profile() {
                 className="relative my-auto w-full max-w-2xl rounded-3xl bg-white p-6 shadow-2xl sm:p-8"
               >
                 <button
-                  onClick={() =>
-                    setShowUpgradeModal(false)
-                  }
+                  onClick={() => setShowUpgradeModal(false)}
                   className="absolute right-5 top-5 rounded-full p-2 transition hover:bg-slate-100"
                 >
                   <X size={20} />
@@ -795,8 +749,8 @@ export default function Profile() {
                   </h2>
 
                   <p className="mt-3 text-gray-500">
-                    Verify your National Identification
-                    Number (NIN) to become a trusted Agent.
+                    Verify your National Identification Number (NIN)
+                    to become a trusted Agent.
                   </p>
                 </div>
 
@@ -841,9 +795,9 @@ export default function Profile() {
                   </h3>
 
                   <p className="text-sm leading-6 text-gray-600">
-                    By continuing, you confirm that the NIN
-                    provided belongs to you and that all
-                    information submitted is accurate.
+                    By continuing, you confirm that the NIN provided
+                    belongs to you and that all information submitted
+                    is accurate.
                   </p>
                 </div>
 
@@ -858,9 +812,8 @@ export default function Profile() {
                   />
 
                   <span className="text-sm text-gray-700">
-                    I certify that the information provided
-                    is correct and I agree to the verification
-                    process.
+                    I certify that the information provided is correct
+                    and I agree to the verification process.
                   </span>
                 </label>
 
