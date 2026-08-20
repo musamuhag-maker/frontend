@@ -5,7 +5,6 @@ import {
   Mail,
   ShieldCheck,
   BadgeCheck,
-  Building2,
   BriefcaseBusiness,
   CheckCircle2,
   ArrowRight,
